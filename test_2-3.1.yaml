@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: mxw4li4ztq8uu
+  id: g2uum822g1qst
 info:
   title: api2-3.1
   version: '1.0'
@@ -17,6 +17,8 @@ paths:
         description: Id of an existing user.
     get:
       summary: Get User Info by User ID
+      x-stoplight:
+        id: j59s6bp29v3zc
       tags: []
       responses:
         '200':
@@ -39,8 +41,6 @@ paths:
           description: User Not Found
       operationId: get-users-userId
       description: Retrieve the information of the user with the matching user ID.
-      x-stoplight:
-        id: bsbp1fr34ql2m
     patch:
       summary: Update User Information
       operationId: patch-users-userId
@@ -94,10 +94,12 @@ paths:
                   dateOfBirth: '1985-10-02'
         description: Patch user properties to update.
       x-stoplight:
-        id: z1upli58s791x
+        id: iv8gf780vlgxs
   /user:
     post:
       summary: Create New User
+      x-stoplight:
+        id: t0dnfnmcg4e98
       operationId: post-user
       responses:
         '200':
@@ -149,10 +151,10 @@ paths:
                   dateOfBirth: '1996-08-24'
         description: Post the necessary fields for the API to create a new user.
       description: Create a new user.
-      x-stoplight:
-        id: hba5hh1dtrll8
     get:
       summary: Your GET endpoint
+      x-stoplight:
+        id: tdumcxpepwgxo
       tags: []
       responses:
         '200':
@@ -165,14 +167,12 @@ paths:
                   mmm:
                     type: string
                     x-stoplight:
-                      id: 36ie0gpksymys
+                      id: 0q88iu6jfuenu
                   hhhhh:
                     type: string
                     x-stoplight:
-                      id: 36ie0gpksymys
+                      id: te24xkwqvzw3w
       operationId: get-user
-      x-stoplight:
-        id: 16ypxdcw3oicw
       requestBody:
         content:
           application/json:
@@ -180,14 +180,16 @@ paths:
               oneOf:
                 - $ref: '#/components/schemas/User'
                   x-stoplight:
-                    id: ooodri8rkz7cq
+                    id: hlmxm2q21w3qv
                 - $ref: '#/components/schemas/test1'
                   x-stoplight:
-                    id: ooodri8rkz7cq
+                    id: ncatz8w75xh87
 components:
   schemas:
     User:
       title: User
+      x-stoplight:
+        id: bvascq52yy0st
       type: object
       description: ''
       examples:
@@ -203,15 +205,15 @@ components:
           type: integer
           description: Unique identifier for the given user.
           x-stoplight:
-            id: by8mn83ptb5p5
+            id: 5pyaeydu23a4s
         firstName:
           type: string
           x-stoplight:
-            id: bsbp1fr34ql2m
+            id: amo9kb8jjrjie
         lastName:
           type: string
           x-stoplight:
-            id: 0jz5bri1e59nq
+            id: s3921py7djd85
         email:
           type: string
           format: email
@@ -227,25 +229,23 @@ components:
           type: boolean
           description: Set to true if the user's email has been verified.
           x-stoplight:
-            id: 889k1xqrjde9v
+            id: 7ls7ozllr5eeu
         createDate:
           type: string
           format: date
           description: The date that the user was created.
           x-stoplight:
-            id: bsbp1fr34ql2m
+            id: omo523p8j6vwy
       required:
         - id
         - firstName
         - lastName
         - email
         - emailVerified
-      x-stoplight:
-        id: ooodri8rkz7cq
     test1:
       title: test1
       x-stoplight:
-        id: ooodri8rkz7cq
+        id: nsh3m8eax961t
       type: object
       description: ''
       examples:

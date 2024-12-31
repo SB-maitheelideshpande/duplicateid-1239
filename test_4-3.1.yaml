@@ -17,6 +17,8 @@ paths:
         description: Id of an existing user.
     get:
       summary: Get User Info by User ID
+      x-stoplight:
+        id: cpi7jlgnzezns
       tags: []
       responses:
         '200':
@@ -39,10 +41,10 @@ paths:
           description: User Not Found
       operationId: get-users-userId
       description: Retrieve the information of the user with the matching user ID.
-      x-stoplight:
-        id: bsbp1fr34ql2m
     patch:
       summary: Update User Information
+      x-stoplight:
+        id: bhonjvyjlab5b
       operationId: patch-users-userId
       responses:
         '200':
@@ -93,8 +95,6 @@ paths:
                   lastName: Baker
                   dateOfBirth: '1985-10-02'
         description: Patch user properties to update.
-      x-stoplight:
-        id: mxw4li4ztq8uu
   /user:
     post:
       summary: Create New User
@@ -153,6 +153,8 @@ paths:
         id: hba5hh1dtrll8
     get:
       summary: Your GET endpoint
+      x-stoplight:
+        id: 16ypxdcw3oicw
       tags: []
       responses:
         '200':
@@ -165,14 +167,12 @@ paths:
                   mmm:
                     type: string
                     x-stoplight:
-                      id: hba5hh1dtrll8
+                      id: 2270yst4dsiry
                   hhhhh:
                     type: string
                     x-stoplight:
                       id: 36ie0gpksymys
       operationId: get-user
-      x-stoplight:
-        id: 16ypxdcw3oicw
       requestBody:
         content:
           application/json:
@@ -180,14 +180,16 @@ paths:
               oneOf:
                 - $ref: '#/components/schemas/User'
                   x-stoplight:
-                    id: ooodri8rkz7cq
+                    id: z2przf7yh3sb9
                 - $ref: '#/components/schemas/test1'
                   x-stoplight:
-                    id: ooodri8rkz7cq
+                    id: 0kf6l1ulmjbl5
 components:
   schemas:
     User:
       title: User
+      x-stoplight:
+        id: uacfyfmri9acl
       type: object
       description: ''
       examples:
@@ -203,11 +205,11 @@ components:
           type: integer
           description: Unique identifier for the given user.
           x-stoplight:
-            id: by8mn83ptb5p5
+            id: 9fh8maaln3t58
         firstName:
           type: string
           x-stoplight:
-            id: ooodri8rkz7cq
+            id: xc6k8blc953jf
         lastName:
           type: string
           x-stoplight:
@@ -222,7 +224,7 @@ components:
           format: date
           example: '1997-10-31'
           x-stoplight:
-            id: hba5hh1dtrll8
+            id: 1y6ouytpwcgyq
         emailVerified:
           type: boolean
           description: Set to true if the user's email has been verified.
@@ -233,19 +235,17 @@ components:
           format: date
           description: The date that the user was created.
           x-stoplight:
-            id: bsbp1fr34ql2m
+            id: 914m9sv15frb2
       required:
         - id
         - firstName
         - lastName
         - email
         - emailVerified
-      x-stoplight:
-        id: ooodri8rkz7cq
     test1:
       title: test1
       x-stoplight:
-        id: ooodri8rkz7cq
+        id: h9thnx6i4c2ys
       type: object
       description: ''
       examples:

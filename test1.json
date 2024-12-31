@@ -1,0 +1,29 @@
+{
+    "title": "test1",
+    "x-stoplight": {
+        "id": "14jjkkogwizmg"
+    },
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "x-stoplight": {
+                "id": "xc6l4c1sd3ms0"
+            }
+        },
+        "fruit": {
+            "type": "array",
+            "x-stoplight": {
+                "id": "nu6c01m9fobyk"
+            },
+            "items": {}
+        },
+        "flower": {
+            "type": "array",
+            "x-stoplight": {
+                "id": "mxw4li4ztq8uu"
+            },
+            "items": {}
+        }
+    }
+}

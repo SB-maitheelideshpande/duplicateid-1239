@@ -1,0 +1,82 @@
+{
+  "type": "object",
+  "title": "test4",
+  "properties": {
+    "id": {
+      "type": "array",
+      "items": {}
+    },
+    "check": {
+      "type": "string"
+    },
+    "try": {
+      "type": "object",
+      "properties": {
+        "fff": {
+          "type": "string"
+        },
+        "fkfjkf": {
+          "type": "string"
+        },
+        "sakcjs": {
+          "type": "string"
+        },
+        "ssdkls": {
+          "type": "string"
+        },
+        "klklc": {
+          "type": "object",
+          "properties": {
+            "s;csl;cd": {
+              "type": "string"
+            },
+            "tt": {
+              "type": "string"
+            },
+            "ttt": {
+              "type": "string"
+            },
+            "y33": {
+              "type": "integer"
+            },
+            "y345": {
+              "type": "boolean"
+            },
+            "y3434": {
+              "type": "array",
+              "items": {}
+            },
+            "y111": {
+              "type": "boolean"
+            },
+            "y22": {},
+            "y2": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "verify": {
+      "type": "object",
+      "properties": {
+        "r": {
+          "type": "string"
+        },
+        "t": {
+          "type": "string"
+        },
+        "yu": {
+          "type": "boolean"
+        },
+        "i": {
+          "type": "object"
+        },
+        "o": {
+          "type": "array",
+          "items": {}
+        }
+      }
+    }
+  }
+}

@@ -1,29 +1,37 @@
 {
-    "title": "test1",
-    "x-stoplight": {
-        "id": "14jjkkogwizmg"
+  "title": "test1",
+  "x-stoplight": {
+    "id": "kt03oz1zxafgm"
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "cswgapeywodb5"
+      }
     },
-    "type": "object",
-    "properties": {
-        "id": {
-            "type": "string",
-            "x-stoplight": {
-                "id": "xc6l4c1sd3ms0"
-            }
-        },
-        "fruit": {
-            "type": "array",
-            "x-stoplight": {
-                "id": "xc6l4c1sd3ms0"
-            },
-            "items": {}
-        },
-        "flower": {
-            "type": "array",
-            "x-stoplight": {
-                "id": "14jjkkogwizmg"
-            },
-            "items": {}
+    "fruit": {
+      "type": "array",
+      "x-stoplight": {
+        "id": "aw5vhxww6bavl"
+      },
+      "items": {
+        "x-stoplight": {
+          "id": "dmg2q0gjs10n2"
         }
+      }
+    },
+    "flower": {
+      "type": "array",
+      "x-stoplight": {
+        "id": "5xduyhuydp6bv"
+      },
+      "items": {
+        "x-stoplight": {
+          "id": "wglmeoql6jsou"
+        }
+      }
     }
+  }
 }
